@@ -78,7 +78,7 @@ def DHT_read(pin):
 # adds a record to the database
 def insert_temp_reading (thermometer,temperature,humidity):
 
- conn = MySQLdb.connect("localhost","przemek","Json123","pi_base" )
+ conn = MySQLdb.connect("localhost","user","Pass","basename" )
  cursor = conn.cursor()
  params = [thermometer,temperature,humidity]
 
